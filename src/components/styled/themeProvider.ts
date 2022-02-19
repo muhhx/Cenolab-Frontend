@@ -1,3 +1,5 @@
+import { isOpen } from "../../context/menuContext"
+
 export const theme = {
     colors: {
         purple: '#5e15b2',
