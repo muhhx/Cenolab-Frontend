@@ -1,0 +1,1 @@
+//Retorna true or false. Se true, quando você tentar acessar qualquer página, vai ser redirecionado pra Página de Manutenção

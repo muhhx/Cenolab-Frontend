@@ -1,0 +1,2 @@
+//Usado para saber se o adm está logado ou não. Caso esteja logado, aparecerá uma tabelinha "myAdmin" em cima do header que redicionará para a página de administrador.
+//Caso não esteja logado, não terá acesso ao admin panel

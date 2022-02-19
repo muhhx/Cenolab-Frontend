@@ -1,0 +1,1 @@
+//Dependendo da current Page, tem alteração nas cores do header, layout do footer, etc
