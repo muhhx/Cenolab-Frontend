@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: .5fr .35fr .15fr;
+    margin: 100px 0px;
 `;
 
 export const About = styled.div`
@@ -32,13 +34,12 @@ export const AboutImage = styled.img`
 `;
 
 export const Title = styled.h3`
-    color: white;
+    color: black;
     font-weight: 600;
 `;
 
 export const Description = styled.p`
-    color: white;
-    font-weight: 300;
+    color: black;
     text-align: justify;
     max-width: 390px;
 `;
@@ -69,8 +70,7 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactDescription = styled.p`
-    font-weight: 300;
-    color: white;
+    color: black;
     text-align: end;
     
     @media only screen and (max-width: 950px) {

@@ -7,6 +7,11 @@ export const Text = styled.p`
     text-align: center;
     color: white;
     font-weight: 600;
+    word-wrap: break-word;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 28px;
+    }
 `;
 
 export const CustomText = styled.span`
@@ -14,4 +19,8 @@ export const CustomText = styled.span`
     color: white;
     font-family: ${({theme}) => theme.font.family};
     font-style: italic;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 28px;
+    }
 `;

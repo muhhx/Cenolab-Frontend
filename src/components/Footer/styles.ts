@@ -2,30 +2,26 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    overflow: hidden;
 `;
 
 export const Container = styled.div`
-    width: 90%;
-    max-width: 1000px;
-    height: 80%;
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 100px;
+    gap: 100px;
+    overflow: hidden;
 `;
 
-export const PaperDownwardsImage = styled.img`
+export const PaperImage = styled.img`
     width: 100%;
-    position: absolute;
-    top: 0;
 `;
 
 export const Background = styled.img`

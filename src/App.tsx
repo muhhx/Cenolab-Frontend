@@ -7,8 +7,8 @@ import Menu from "./components/Menu"
 import Footer from "./components/Footer"
 
 import { ThemeProvider } from "styled-components"
-import { GlobalStyle } from "./components/styled/globalStyles"
-import { theme } from "./components/styled/themeProvider"
+import { GlobalStyle } from "./components/globalStyles"
+import { theme } from "./components/themeProvider"
 import './App.css'
 
 

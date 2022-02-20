@@ -7,6 +7,11 @@ export const TextContainer = styled.p`
     color: white;
     font-weight: 600;
     font-size: 38px;
+    word-wrap: break-word;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 28px;
+    }
 `;
 
 export const TextButton = styled.button`
@@ -18,4 +23,8 @@ export const TextButton = styled.button`
     font-style: italic;
     text-decoration: underline;
     cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 28px;
+    }
 `;

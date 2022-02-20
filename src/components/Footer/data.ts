@@ -1,4 +1,4 @@
-import logoCenolab from '../../assets/logo_white.png'
+import logoCenolab from '../../assets/logo_black.png'
 import logoInstagram from '../../assets/logo_instagram.png'
 import logoFacebook from '../../assets/logo_facebook.png'
 
@@ -8,6 +8,7 @@ import iconLocation from '../../assets/icon_location.png'
 import iconRedirect from '../../assets/icon_redirect.png'
 
 import paperDownwards from '../../assets/div_downwards.png'
+import paperUpwards from '../../assets/div_upwards.png'
 import background from '../../assets/background_footer.png'
 
 export const footerAbout = {
@@ -42,6 +43,7 @@ export const footerNavigation = {
 
 export const footerAssets = {
     paperDownwards: paperDownwards,
+    paperUpwards: paperUpwards,
     background: background,
     alt: 'Page division.'
 }

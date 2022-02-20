@@ -5,19 +5,20 @@ import { footerAssets } from "./data";
 import Contato from "./Contato";
 import Workflow from "./Workflow";
 import Information from "./Information";
-import { Section, Background, PaperDownwardsImage, Container } from "./styles";
+import { Section, Background, PaperImage, Container } from "./styles";
 
 const Footer: React.FC = () => {
     const { currentPage } = useCurrentPage()
 
     return (
         <Section>
-            <PaperDownwardsImage src={footerAssets.paperDownwards} alt={footerAssets.alt}/>
             <Container>
+                <PaperImage src={footerAssets.paperDownwards} alt={footerAssets.alt}/>
                 { currentPage !== '/workflow' ? <Contato /> : <Workflow />}
-                <Information />
+                <PaperImage src={footerAssets.paperUpwards} alt={footerAssets.alt}/>
+                <Background src={footerAssets.background} alt={footerAssets.alt}/>
             </Container>
-            <Background src={footerAssets.background} alt={footerAssets.alt}/>
+            <Information />
         </Section>
     )
 }
