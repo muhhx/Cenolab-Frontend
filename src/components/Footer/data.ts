@@ -45,3 +45,9 @@ export const footerAssets = {
     background: background,
     alt: 'Page division.'
 }
+
+export const footerWorkflow = {
+    paragraph1: 'Todos nós somos capazes de contar ao menos uma experiência incrível que vivemos na nossa vida, mas já parou para pensar que essa tarefa se torna difícil quando temos que contar alguma boa experiência que proporcionamos a alguém? Nós somos os profissionais encarregados de garantir uma experiência completa, do momento em que captamos briefing do cliente até a entrega do projeto.',
+    paragraph2: 'Um coletivo de arquitetura e design que pensa fora da caixa, mas também não deixa de olhar através dela. Nosso intuito é explorar todas as possibilidades de imersão, interação e conexão do cliente com o nosso propósito.',
+    paragraph3: 'Acreditamos em sonhos! Colocamos a emoção no patamar mais alto, porque sabemos que é nela que estão guardadas a melhores lembranças. O nosso propósito é impactar e transformar as pessoas através de experiencias únicas e memoráveis.',
+}

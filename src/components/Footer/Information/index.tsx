@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { footerAbout, footerContact, footerNavigation } from "../data";
-import { About, AboutWrapper, Contact, Container, Description, AboutImage, Navigation, Title, ContactWrapper, ContactDescription, Icon, NavigationWrapper } from "./styles";
+import { About, AboutWrapper, Contact, Container, Description, AboutImage, Navigation, Title, ContactWrapper, ContactDescription, Icon, NavigationWrapper, NavigationIcon } from "./styles";
 
 const Information: React.FC = () => {
     return (
@@ -36,25 +36,25 @@ const Information: React.FC = () => {
                     <Link to={'/'}>
                         <NavigationWrapper>
                             <ContactDescription>{footerNavigation.home}</ContactDescription>
-                            <Icon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
+                            <NavigationIcon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
                         </NavigationWrapper>
                     </Link>
                     <Link to={'/portfolio'}>
                         <NavigationWrapper>
                             <ContactDescription>{footerNavigation.portfolio}</ContactDescription>
-                            <Icon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
+                            <NavigationIcon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
                         </NavigationWrapper>
                     </Link>
                     <Link to={'/workflow'}> 
                         <NavigationWrapper>
                             <ContactDescription>{footerNavigation.workflow}</ContactDescription>
-                            <Icon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
+                            <NavigationIcon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
                         </NavigationWrapper>
                     </Link>
                     <Link to={'/contato'}>
                         <NavigationWrapper>
                             <ContactDescription>{footerNavigation.contact}</ContactDescription>
-                            <Icon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
+                            <NavigationIcon src={footerNavigation.redirectImage} alt={footerNavigation.alt}/>
                         </NavigationWrapper>
                     </Link>
             </Navigation>

@@ -105,3 +105,8 @@ export const NavigationWrapper = styled.div`
     gap: 10px;
     cursor: pointer;
 `;
+
+export const NavigationIcon = styled.img`
+    width: 10px;
+    padding-top: 4px;
+`;
