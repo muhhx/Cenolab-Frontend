@@ -1,4 +1,4 @@
-import NavContent from "../NavContent";
+import Content from "../Content";
 import { Section, Container, Wrapper } from "./styles";
 
 export const Menu: React.FC = () => {
@@ -6,7 +6,7 @@ export const Menu: React.FC = () => {
         <Wrapper>
             <Section>
                 <Container>
-                    <NavContent mobileStatus={true} />
+                    <Content mobileStatus={true} />
                 </Container>
             </Section>
         </Wrapper>

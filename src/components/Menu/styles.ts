@@ -14,7 +14,7 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: white;
 `;
 
 export const Container = styled.div`

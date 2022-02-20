@@ -3,11 +3,14 @@ import { useMenu } from "./context/menuContext"
 
 import Routing from "./routes/routing"
 import Navigation from "./components/Navigation"
+import Menu from "./components/Menu"
+import Footer from "./components/Footer"
 
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle } from "./components/styled/globalStyles"
 import { theme } from "./components/styled/themeProvider"
-import Menu from "./components/Menu"
+import './App.css'
+
 
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
           <Navigation />
           { isOpen ? <Menu /> : ''}
           <Routing />
-          <footer>Footer</footer>
+          <Footer />
         </Router>
       </ThemeProvider>
     </>

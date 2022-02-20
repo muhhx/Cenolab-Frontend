@@ -8,7 +8,7 @@ interface Props {
     currentPage?: string;
 }
 
-const NavContent: React.FC<Props> = ({ currentPage, mobileStatus }) => {
+const Content: React.FC<Props> = ({ currentPage, mobileStatus }) => {
     const { isOpen, setIsOpen } = useMenu()
     
     return (
@@ -49,4 +49,4 @@ const NavContent: React.FC<Props> = ({ currentPage, mobileStatus }) => {
     )
 }
 
-export default NavContent;
+export default Content;

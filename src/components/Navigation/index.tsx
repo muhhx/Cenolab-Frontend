@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from "react-router-dom";
 import { useCurrentPage } from "../../context/currentPageContext";
-import NavContent from '../NavContent';
+import Content from '../Content';
 import { Container, Nav, Background } from "./styles";
 
 const Navigation: React.FC = () => {
@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
         <Nav>
             <Background>
                 <Container>
-                    <NavContent currentPage={currentPage} mobileStatus={false} />
+                    <Content currentPage={currentPage} mobileStatus={false} />
                 </Container>
             </Background>
         </Nav>

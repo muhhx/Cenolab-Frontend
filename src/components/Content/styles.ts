@@ -39,14 +39,14 @@ export const Block = styled.div`
 
 export const Title = styled.h1`
     text-align: ${(props: Props) => props.status === true ? 'center' : 'initial'};
-    color: white;
+    color: ${(props: Props) => props.status === true ? 'black' : 'white'};
     font-size: 24px;
     font-weight: ${(props: Props) => props.pageStatus === true ? '700' : '300'};
     `;
 
 export const Description = styled.p`
     text-align: ${(props: Props) => props.status === true ? 'center' : 'initial'};
-    color: white;
+    color: ${(props: Props) => props.status === true ? 'black' : 'white'};
     font-size: 10px;
 `;
 
