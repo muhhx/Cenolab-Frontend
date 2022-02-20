@@ -14,7 +14,7 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: red;
 `;
 
 export const Container = styled.div`
@@ -22,20 +22,4 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-`;
-
-export const Block = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-export const Title = styled.h1`
-    color: ${({theme}) => theme.colors.black};
-    font-size: 24px;
-`;
-
-export const Description = styled.p`
-    color: ${({theme}) => theme.colors.black};
-    font-size: 10px;
 `;

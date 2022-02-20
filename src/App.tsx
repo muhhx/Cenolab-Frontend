@@ -1,3 +1,4 @@
+import { BrowserRouter as Router } from "react-router-dom"
 import { useMenu } from "./context/menuContext"
 
 import Routing from "./routes/routing"
@@ -16,10 +17,12 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle menuStatus={isOpen} />
-        <Navigation />
-        { isOpen ? <Menu /> : ''}
-        <Routing />
-        <footer>Footer</footer>
+        <Router>
+          <Navigation />
+          { isOpen ? <Menu /> : ''}
+          <Routing />
+          <footer>Footer</footer>
+        </Router>
       </ThemeProvider>
     </>
   )

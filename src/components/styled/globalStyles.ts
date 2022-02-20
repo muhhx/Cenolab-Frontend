@@ -20,4 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 12px;
         overflow: ${(props: Props) => props.menuStatus === true ? 'hidden' : 'initial'}
     }
+
+    :link {
+        text-decoration: none;
+        color: initial;
+    }
 `;
