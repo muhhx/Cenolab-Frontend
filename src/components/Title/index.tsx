@@ -6,14 +6,14 @@ interface Props {
         custom1: string;
         normal2: string;
         custom2: string;
-        normal3: string;
+        normal3?: string;
         fontColor: string;
     }
 }
 
 const Title: React.FC<Props> = ({ textContent }) => {
     return (
-        <Text>{textContent.normal1} <CustomText>{textContent.custom1}</CustomText> {textContent.normal2} <CustomText>{textContent.custom2}</CustomText> {textContent.normal3}</Text>
+        <Text color={textContent.fontColor}>{textContent.normal1} <CustomText color={textContent.fontColor}>{textContent.custom1}</CustomText> {textContent.normal2} <CustomText>{textContent.custom2}</CustomText> {textContent.normal3}</Text>
     )
 }
 

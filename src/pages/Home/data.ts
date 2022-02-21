@@ -2,7 +2,8 @@ import aboutImage1 from '../../assets/about_icon1.png'
 import aboutImage2 from '../../assets/about_icon2.png'
 import aboutImage3 from '../../assets/about_icon3.png'
 import aboutImage4 from '../../assets/about_icon4.png'
-import paperImage from '../../assets/div_upwards.png';
+import paperImage from '../../assets/div_upwards.png'
+import tapeImage from '../../assets/clients_background.png'
 
 export const headerAssets = {
     paper: paperImage,
@@ -40,3 +41,8 @@ export const aboutData4 = {
     line2: 'E ATIVAÇÕES DE MARCA',
     description: 'Se você precisa traduzir um guide de uma marca, e adaptar as necessidades de um cliente específico que já possui uma estrutura fixa, somos nós que seremos responsáveis por deixar aquele ambiente, a cara da marca!'
 };
+
+export const clientsAssets = {
+    image: tapeImage,
+    alt: 'Tape image.'
+}

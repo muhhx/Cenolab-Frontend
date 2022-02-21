@@ -11,8 +11,7 @@ export const titleCompanies = {
     normal1: 'SOMOS',
     custom1: 'RESPONSÁVEIS',
     normal2: 'POR CRIAR EXPERIÊNCIAS PARA',
-    custom2: 'GRANDES MARCAS',
-    normal3: ':',
+    custom2: 'GRANDES MARCAS:',
     fontColor: 'black'
 };
 

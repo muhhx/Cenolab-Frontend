@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
+interface Props {
+    color: string;
+}
+
 export const Text = styled.p`
     width: 90%;
-    max-width: 700px;
+    max-width: 690px;
     font-size: 38px;
     text-align: center;
-    color: white;
-    font-weight: 600;
+    color: ${(props) => props.color};
+    font-weight: 700;
     word-wrap: break-word;
 
     @media only screen and (max-width: 600px) {
@@ -16,7 +20,7 @@ export const Text = styled.p`
 
 export const CustomText = styled.span`
     font-size: 38px;
-    color: white;
+    color: ${(props) => props.color};
     font-family: ${({theme}) => theme.font.family};
     font-style: italic;
 
