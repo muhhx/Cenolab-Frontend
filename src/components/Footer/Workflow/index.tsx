@@ -1,5 +1,5 @@
 import { footerWorkflow } from '../data'
-import { titleFooter } from "../../Title/data";
+import { titleWhite } from "../../Title/data";
 
 import Title from "../../Title";
 import { Container, Description } from './styles'
@@ -7,7 +7,7 @@ import { Container, Description } from './styles'
 const Workflow: React.FC = () => {
     return (
         <Container>
-            <Title textContent={titleFooter}/>
+            <Title textContent={titleWhite}/>
             <Description>{footerWorkflow.paragraph1}</Description>
             <Description>{footerWorkflow.paragraph2}</Description>
             <Description>{footerWorkflow.paragraph3}</Description>

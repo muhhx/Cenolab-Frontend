@@ -1,4 +1,4 @@
-export const titleHome = {
+export const titleBlack = {
     normal1: 'LAB',
     custom1: 'CRIATIVO',
     normal2: 'ESPECIALIZADO EM',
@@ -16,7 +16,7 @@ export const titleCompanies = {
     fontColor: 'black'
 };
 
-export const titleFooter = {
+export const titleWhite = {
     normal1: 'LAB',
     custom1: 'CRIATIVO',
     normal2: 'ESPECIALIZADO EM',
