@@ -9,7 +9,7 @@ export const Section = styled.section`
 export const Container = styled.div`
     width: 90%;
     max-width: 900px;
-    /* min-height: 100vh; */
+    min-height: 80vh;
     display: flex;
     align-items: center;
     margin: 100px 0px;

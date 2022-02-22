@@ -2,7 +2,7 @@ import { headerAssets } from "../data";
 import { titleWhite } from "../../../components/Title/data";
 
 import Title from "../../../components/Title";
-import { Container, DivisonBackground, Paper, TitleWrapperAbsolute } from "./styles";
+import { BackgroundVideo, Container, DivisonBackground, Paper, TitleWrapperAbsolute } from "./styles";
 
 const Header: React.FC = () => {
     return (
@@ -13,6 +13,7 @@ const Header: React.FC = () => {
             <DivisonBackground>
                 <Paper src={headerAssets.paper} alt={headerAssets.alt} />
             </DivisonBackground>
+            <BackgroundVideo src={headerAssets.backgrounVideo} autoPlay loop muted/>
         </Container>
     )
 }

@@ -8,7 +8,14 @@ export const Container = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    background-color: red;
+    overflow: hidden;
+`;
+
+export const BackgroundVideo = styled.video`
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    z-index: -1;
 `;
 
 export const DivisonBackground = styled.div`
@@ -33,4 +40,8 @@ export const TitleWrapperAbsolute = styled.div`
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,.5);
+
+    @media only screen and (min-width: 900px) {
+        display: none;
+    }
 `;

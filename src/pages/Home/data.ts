@@ -2,6 +2,7 @@ import aboutImage1 from '../../assets/about_icon1.png'
 import aboutImage2 from '../../assets/about_icon2.png'
 import aboutImage3 from '../../assets/about_icon3.png'
 import aboutImage4 from '../../assets/about_icon4.png'
+import backgroundVideo from '../../assets/header_video.mp4'
 import paperImage from '../../assets/div_upwards.png'
 import tapeImage from '../../assets/clients_background.png'
 
@@ -18,6 +19,7 @@ import client7 from '../../assets/client7.png'
 import client8 from '../../assets/client8.png'
 
 export const headerAssets = {
+    backgrounVideo: backgroundVideo,
     paper: paperImage,
     alt: 'Paper division image.'
 };

@@ -19,6 +19,16 @@ export const Container = styled.div`
     gap: 80px;
 `;
 
+export const TitleWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 900px) {
+        display: none;
+    }
+`;
+
 export const BlockColumn = styled.div`
     width: 100%;
     display: flex;
@@ -63,7 +73,7 @@ export const Image = styled.img`
     width: 60px;
 `;
 
-export const Title = styled.h1`
+export const Header = styled.h1`
     line-height: 1;
 
     @media only screen and (max-width: 900px) {
