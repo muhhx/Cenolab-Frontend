@@ -11,12 +11,9 @@ const Clients: React.FC = () => {
                 <Title textContent={ titleCompanies }/>
                 <BackgroundWrapper>
                     <ClientWrapper>
-                        <ClientIcon />
-                        <ClientIcon />
-                        <ClientIcon />
-                        <ClientIcon />
-                        <ClientIcon />
-                        <ClientIcon />
+                        {clientsAssets.clients.map((client, key) => (
+                            <ClientIcon src={client} alt={clientsAssets.clientAlt} key={key}/>
+                        ))}
                     </ClientWrapper>
                     <Background src={clientsAssets.image} alt={clientsAssets.alt} />
                 </BackgroundWrapper>

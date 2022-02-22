@@ -1,12 +1,16 @@
 import { information1, information2 } from "../data";
-import { Section, Container, Wrapper, ImageTemp, DescriptionWrapper, DescriptionNumber, DescriptionTitle, DescriptionParagraph } from "./styled";
+import Frame1 from "../../../components/Frame/Frame1";
+import Frame2 from "../../../components/Frame/Frame2";
+import { Section, Container, Wrapper, DescriptionWrapper, DescriptionNumber, DescriptionTitle, DescriptionParagraph, FrameWrapper } from "./styled";
 
 const Information: React.FC = () => {
     return (
         <Section>
             <Container>
                 <Wrapper>
-                    <ImageTemp />
+                    <FrameWrapper>
+                        <Frame1 defaultImage={information1.defaultImage} />
+                    </FrameWrapper>
                     <DescriptionWrapper>
                         <DescriptionNumber>{information1.number}</DescriptionNumber>
                         <DescriptionTitle>{information1.title}</DescriptionTitle>
@@ -15,7 +19,9 @@ const Information: React.FC = () => {
                     </DescriptionWrapper>
                 </Wrapper>
                 <Wrapper>
-                    <ImageTemp />
+                    <FrameWrapper>
+                        <Frame2 defaultImage={information2.defaultImage} />
+                    </FrameWrapper>
                     <DescriptionWrapper>
                         <DescriptionNumber>{information2.number}</DescriptionNumber>
                         <DescriptionTitle>{information2.title}</DescriptionTitle>

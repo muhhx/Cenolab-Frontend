@@ -37,11 +37,9 @@ export const Background = styled.img`
 export const ClientWrapper = styled.div`
     position: absolute;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 `;
 
-export const ClientIcon = styled.div`
-    width: 30px;
-    aspect-ratio: 1;
-    background-color: white;
+export const ClientIcon = styled.img`
+    height: 25px;
 `;

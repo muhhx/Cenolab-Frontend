@@ -35,12 +35,6 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const ImageTemp = styled.div`
-    width: 100%;
-    height: 300px;
-    background-color: pink;
-`;
-
 export const DescriptionWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -67,4 +61,15 @@ export const DescriptionTitle = styled.h1`
 export const DescriptionParagraph = styled.p`
     color: black;
     text-align: justify;
+`;
+
+export const FrameWrapper = styled.div`
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 700px) {
+        height: auto;
+    }
 `;
