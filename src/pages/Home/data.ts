@@ -5,6 +5,9 @@ import aboutImage4 from '../../assets/about_icon4.png'
 import paperImage from '../../assets/div_upwards.png'
 import tapeImage from '../../assets/clients_background.png'
 
+import defaultImage1 from '../../assets/default1.png'
+import defaultImage2 from '../../assets/default2.png'
+
 import client1 from '../../assets/client1.png'
 import client2 from '../../assets/client2.png'
 import client3 from '../../assets/client3.png'
@@ -56,4 +59,18 @@ export const clientsAssets = {
     alt: 'Tape image.',
     clients: [client1, client2, client3, client4, client5, client6, client7, client8],
     clientAlt: 'Client logo.'
-}
+};
+
+export const projectsExample1 = {
+    image: defaultImage1,
+    number: 1,
+    title: 'PROJETO VINTAGE',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's."
+};
+
+export const projectsExample2 = {
+    image: defaultImage2,
+    number: 2,
+    title: 'PROJETO GREEN',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'sLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's."
+};

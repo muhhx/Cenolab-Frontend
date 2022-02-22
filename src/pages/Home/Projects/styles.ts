@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     width: 100%;
-    background-color: rgba(0, 0, 0, .1);
+    /* background-color: rgba(0, 0, 0, .1); */
     display: flex;
     justify-content: center;    
 `;
@@ -10,8 +10,6 @@ export const Section = styled.section`
 export const Container = styled.div`
     width: 90%;
     max-width: 1000px;
-    height: 200vh;
     display: flex;
     flex-direction: column;
-    background-color: blue;
 `;
