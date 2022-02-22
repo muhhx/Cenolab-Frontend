@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Section = styled.section`
     width: 100%;
     min-height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, .1), transparent 70%);
+    /* background: linear-gradient(rgba(0, 0, 0, .1), transparent 70%); */
     display: flex;
     justify-content: center;
     align-items: center;

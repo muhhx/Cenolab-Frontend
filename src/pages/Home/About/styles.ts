@@ -5,7 +5,7 @@ export const Section = styled.section`
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(transparent 70%, rgba(0, 0, 0, .1))
+    /* background: linear-gradient(transparent 70%, rgba(0, 0, 0, .1)) */
 `;
 
 export const Container = styled.div`
