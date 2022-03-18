@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Workflow from "../pages/Workflow"
+import Workflow from "../pages/Workflow";
+import Login from "../pages/Login";
 import PrivateRoute from "./privateRoute";
 
 const Routing: React.FC = () => {
@@ -14,7 +15,7 @@ const Routing: React.FC = () => {
             <Route path="*" element={<div>404! Not found</div>}/>
 
             <Route path="/manutencao" element={<div>Manutenção</div>}/>
-            <Route path="/login" element={<div>Login</div>}/>
+            <Route path="/login" element={<Login />}/>
             <Route element={<PrivateRoute />}>
                 <Route path="/myadmin" element={<div>Página de Adm</div>}/>
             </Route>
