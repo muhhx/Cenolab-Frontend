@@ -34,7 +34,9 @@ O que falta atualizar:
 - [ ] Página de Projetos
 - [ ] Página de Projeto
 - [ ] Página 404
-- [ ] Contato
+- [ ] Página de Contato
+- [ ] Página de Manutenção
+- [ ] Atualizar button página de login para fita + arrumar placeholder color e input font
 
 
 ## Tecnologias

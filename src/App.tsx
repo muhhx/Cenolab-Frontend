@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom"
 import { useMenu } from "./context/menuContext"
 import { useCurrentPage } from "./context/currentPageContext"
+import { useManutencao } from "./context/manutencaoContext"
 
 import Routing from "./routes/routing"
 import Navigation from "./components/Navigation"
@@ -17,13 +18,14 @@ import './App.css'
 function App() {
   const { isOpen } = useMenu()
   const { displayFooter } = useCurrentPage()
+  const { isClosed } = useManutencao()
 
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle menuStatus={isOpen} />
         <Router>
-          <Navigation />
+          {!isClosed ? <Navigation /> : ''}
           { isOpen ? <Menu /> : ''}
           <Routing />
           {displayFooter ? <Footer /> : ''}
