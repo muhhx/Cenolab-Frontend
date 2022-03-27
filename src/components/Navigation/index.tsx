@@ -1,27 +1,36 @@
 import { useEffect } from 'react'
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 import { useCurrentPage } from "../../context/currentPageContext";
+import { useUser } from '../../context/userContext';
+
 import Content from '../Content';
-import { Container, Nav, Background } from "./styles";
+import * as C from "./styles";
 
 const Navigation: React.FC = () => {
     const { currentPage, setCurrentPage } = useCurrentPage()
-    const location = useLocation()
+    const { currentUser } = useUser()
 
-    console.log(currentPage)
+    const navigate = useNavigate()
+    const location = useLocation()
 
     useEffect(() => {
         setCurrentPage(location.pathname)
     }, [location])
 
     return (
-        <Nav>
-            <Background>
-                <Container>
+        <C.Nav>
+            {!currentUser ? '' : 
+            <C.AdminPanel>
+                <C.AdminButton onClick={() => navigate('/myadmin')}>myAdmin</C.AdminButton>
+            </C.AdminPanel>}
+            
+            <C.Background>
+                <C.Container>
                     <Content currentPage={currentPage} mobileStatus={false} />
-                </Container>
-            </Background>
-        </Nav>
+                </C.Container>
+            </C.Background>
+        </C.Nav>
     )
 }
 

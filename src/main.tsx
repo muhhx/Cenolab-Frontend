@@ -1,14 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { CurrentPageProvider } from './context/currentPageContext'
-import { MenuProvider } from './context/menuContext'
+
+//Contexts
+import { CurrentPageProvider } from './context/currentPageContext';
+import { MenuProvider } from './context/menuContext';
+import { UserProvider } from './context/userContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <CurrentPageProvider>
       <MenuProvider>
-        <App />
+        <UserProvider>
+          <App />
+        </UserProvider>
       </MenuProvider>
     </CurrentPageProvider>
   </React.StrictMode>,

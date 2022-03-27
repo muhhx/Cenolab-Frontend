@@ -29,7 +29,7 @@ O que falta atualizar:
     - [ ] Página de login
     - [ ] Dashboard
         - [ ] Criar portfólio
-        - [ ] Controlar manutenção
+        - [ ] Controlar manutenção 
         - [ ] Atualizar informações que estão faltando
 - [ ] Página de Projetos
 - [ ] Página de Projeto

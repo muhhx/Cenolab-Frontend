@@ -28,3 +28,21 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 `;
+
+export const AdminPanel = styled.div`
+    width: 100%;
+    background-color: ${({ theme }) => theme.colors.purple};
+    display: flex;
+    justify-content: end;
+    padding: 0px 50px;
+`;
+
+export const AdminButton = styled.button`
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;;
+    cursor: pointer;
+`;
