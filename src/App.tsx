@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom"
 import { useMenu } from "./context/menuContext"
+import { useCurrentPage } from "./context/currentPageContext"
 
 import Routing from "./routes/routing"
 import Navigation from "./components/Navigation"
@@ -15,6 +16,7 @@ import './App.css'
 
 function App() {
   const { isOpen } = useMenu()
+  const { displayFooter } = useCurrentPage()
 
   return (
     <>
@@ -24,7 +26,7 @@ function App() {
           <Navigation />
           { isOpen ? <Menu /> : ''}
           <Routing />
-          <Footer />
+          {displayFooter ? <Footer /> : ''}
         </Router>
       </ThemeProvider>
     </>
