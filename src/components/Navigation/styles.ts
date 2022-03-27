@@ -41,8 +41,8 @@ export const AdminButton = styled.button`
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 500;
     font-family: 'Poppins', sans-serif;;
     cursor: pointer;
 `;

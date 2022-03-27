@@ -24,7 +24,7 @@ const Navigation: React.FC = () => {
             <C.AdminPanel>
                 <C.AdminButton onClick={() => navigate('/myadmin')}>myAdmin</C.AdminButton>
             </C.AdminPanel>}
-            
+
             <C.Background>
                 <C.Container>
                     <Content currentPage={currentPage} mobileStatus={false} />
