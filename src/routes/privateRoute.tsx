@@ -3,7 +3,7 @@ import { useUser } from "../context/userContext";
 
 const PrivateRoute: React.FC = () => {
     const { currentUser } = useUser()
-    return currentUser ? <Outlet /> : <Navigate to={'/'} />
+    return currentUser ? <Outlet /> : <Navigate to={'/login'} />
 }
 
 export default PrivateRoute;

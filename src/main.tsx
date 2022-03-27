@@ -4,18 +4,21 @@ import App from './App'
 
 //Contexts
 import { CurrentPageProvider } from './context/currentPageContext';
+import { ManutencaoProvider } from './context/manutencaoContext';
 import { MenuProvider } from './context/menuContext';
 import { UserProvider } from './context/userContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CurrentPageProvider>
-      <MenuProvider>
-        <UserProvider>
-          <App />
-        </UserProvider>
-      </MenuProvider>
-    </CurrentPageProvider>
+    <ManutencaoProvider>
+      <CurrentPageProvider>
+        <MenuProvider>
+          <UserProvider>
+            <App />
+          </UserProvider>
+        </MenuProvider>
+      </CurrentPageProvider>
+    </ManutencaoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

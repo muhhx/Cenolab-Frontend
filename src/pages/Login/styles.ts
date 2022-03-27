@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
+type Props = {
+    backgroundImage: string;
+}
+
 export const Section = styled.section`
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }) => theme.colors.purple};
+    background-image: url(${( props: Props ) => props.backgroundImage});
+    background-size: cover;
+    background-position: center center;
 `;
 
 export const Form = styled.form`
@@ -26,13 +32,14 @@ export const Status = styled.p`
 
 export const Input = styled.input`
     width: 100%;
-    padding: 5px 10px;
+    padding: 8px 10px;
     outline: none;
+    border: none;
 `;
 
 export const Button = styled.button `
     width: 100%;
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: black;
     border: none;
     font-size: 12px;

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { handleLogin } from "../../services/user";
 import { useNavigate } from "react-router-dom";
+
+import { data } from "./data";
 import * as C from "./styles";
 
 const Login = () => {
@@ -14,7 +16,7 @@ const Login = () => {
         e.preventDefault()
 
         if(email.length === 0 || password.length === 0) {
-            return setStatus("Preencha todos os campos.")
+            return setStatus(`${data.statusEmpty}`)
         };
 
         try {
@@ -22,17 +24,17 @@ const Login = () => {
             await handleLogin(email, password)
             navigate("/myadmin")
         } catch {
-            setStatus("Não foi possível fazer login. Verifique as informações nos campos!")
+            setStatus(`${data.statusError}`)
         }
     }
 
     return (
-        <C.Section>
+        <C.Section backgroundImage={data.backgroundImage}>
             <C.Form>
                 {status ? <C.Status>{status}</C.Status> : ''}
                 <C.Input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email}/>
                 <C.Input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-                <C.Button onClick={(e) => login(e)}>Login</C.Button>
+                <C.Button onClick={(e) => login(e)}>{data.buttonText}</C.Button>
             </C.Form>
         </C.Section>
     )
