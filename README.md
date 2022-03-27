@@ -25,11 +25,11 @@
 O que falta atualizar:
 - [ ] Arrumar Prop Drilling Navbar and Menu (Talvez context API, talvez voltar para componentes separados. Criar componente block compartilhado)
 - [ ] Redirecionar para redes sociais footer
-- [ ] Autenticação (Firebase)
-    - [ ] Página de login
+- [x] Autenticação (Firebase)
+    - [x] Página de login
     - [ ] Dashboard
         - [ ] Criar portfólio
-        - [ ] Controlar manutenção 
+        - [x] Controlar manutenção 
         - [ ] Atualizar informações que estão faltando
 - [ ] Página de Projetos
 - [ ] Página de Projeto
