@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 type Props = {
-    backgroundImage: string;
+    backgroundImage?: string;
+    buttonBackround?: string;
 }
 
 export const Section = styled.section`
@@ -21,7 +22,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 `;
 
 export const Status = styled.p`
@@ -31,20 +32,31 @@ export const Status = styled.p`
 `;
 
 export const Input = styled.input`
+    padding: 10px 10px;
     width: 100%;
-    padding: 8px 10px;
-    outline: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    background-color: white;
     border: none;
+    border-bottom: solid 1px white;
+    outline: none;
+    font-size: 12px;
+
+    &::placeholder {
+        color: #aaa;
+    }
 `;
 
-export const Button = styled.button `
+export const Button = styled.button`
+    background-color: transparent;
+    background-image: url(${( props: Props ) => props.buttonBackround});
+    background-size: 100% 100%;
+    height: 45px;
     width: 100%;
-    padding: 8px 10px;
-    background-color: black;
     border: none;
-    font-size: 12px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
     cursor: pointer;
 `;

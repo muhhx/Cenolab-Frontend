@@ -34,7 +34,7 @@ const Login = () => {
                 {status ? <C.Status>{status}</C.Status> : ''}
                 <C.Input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email}/>
                 <C.Input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password}/>
-                <C.Button onClick={(e) => login(e)}>{data.buttonText}</C.Button>
+                <C.Button onClick={(e) => login(e)} buttonBackround={data.buttonBackground}>{data.buttonText}</C.Button>
             </C.Form>
         </C.Section>
     )
