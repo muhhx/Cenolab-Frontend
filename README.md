@@ -35,9 +35,9 @@ O que falta atualizar:
 - [ ] Página de Projeto
 - [ ] Página 404
 - [ ] Página de Contato
-- [ ] Página de Manutenção
-- [ ] Atualizar button página de login para fita + arrumar placeholder color e input font
-
+- [x] Página de Manutenção
+- [ ] Fazer formulário
+- [ ] Arrumar  estado para aparecer o header => Se a página for de Manutenção e tals, nao mostrar (pegar pelo url da pagina)
 
 ## Tecnologias
 - Vite
