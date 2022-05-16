@@ -8,6 +8,7 @@ import { MenuProvider} from './context/MenuProvider';
 import { AuthProvider } from './context/AuthProvider';
 
 const container = document.getElementById('root');
+// @ts-ignore
 const root = createRoot(container);
 
 root.render(
