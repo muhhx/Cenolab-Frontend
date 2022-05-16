@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const Api = axios.create({
-    baseURL: "http://localhost:5000/api/v1/"
+    // @ts-ignore
+    baseURL: import.meta.env.VITE_APP_API_URL
 })
 
 export const authHeader = {
