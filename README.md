@@ -1,8 +1,8 @@
 <h1>CenoLAB Architecture</h1>
 
 <h4 align="center">
-    <span>Products navigation preview:</span>
-  <img alt="Readme" title="Readme" src="./github/PREVIEW_NAVIGATION.gif" />
+    <span>Screens preview:</span>
+  <img alt="Readme" title="Readme" src="./github/CenolabScreens.png" />
 </h4>
 
 <h4 align="center">
