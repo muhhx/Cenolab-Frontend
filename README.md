@@ -10,15 +10,6 @@
   <img alt="Readme" title="Readme" src="./github/PREVIEW_RESPONSIVE_MOBILE.gif" />
 </h4>
 
-<h4 align="center">
-    <span>ADMIN update product preview:</span>
-  <img alt="Readme" title="Readme" src="./github/ADMIN_UPDATE_PROJECT.gif" />
-</h4>
-
-<h4 align="center">
-    <span>ADMIN set home page projects preview:</span>
-  <img alt="Readme" title="Readme" src="./github/ADMIN_UPDATE_HOME.gif" />
-</h4>
 
 You can check all of the screens and gifs with previews by clicking [here](https://github.com/muhhx/Cenolab-Frontend/tree/master/github)
 
